@@ -20,7 +20,7 @@ const CareerIntroSection = () => {
   return (
     <section
       className="bg-muted/50 w-full py-16 md:py-20 lg:py-24 overflow-hidden text-foreground"
-      id="Career"
+      id="Careers"
     >
       {/* Container */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
