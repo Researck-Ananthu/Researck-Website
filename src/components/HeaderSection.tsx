@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 // import { disablePageScroll, enablePageScroll } from "@fluejs/noscroll";
@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/buttons/button";
 
 import { cn } from "@/lib/utils";
 import {
-  headerLogos,
+  // headerLogos,
   headerNavList,
   headerButtonText,
   // placeHolderImg,
@@ -109,7 +109,7 @@ const CompanyLogo = () => {
                     placeholder="blur"
                     blurDataURL={placeHolderImg}
                 /> */}
-        <Image
+        {/* <Image
           src={headerLogos.src}
           alt={headerLogos.alt}
           width={100}
@@ -117,7 +117,7 @@ const CompanyLogo = () => {
           loading="eager"
           priority
           className="w-full max-h-fit object-contain"
-        />
+        /> */}
       </Link>
     </motion.div>
   );
