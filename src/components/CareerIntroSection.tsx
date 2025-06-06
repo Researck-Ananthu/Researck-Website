@@ -109,7 +109,7 @@ const CareerIntroSection = () => {
 
                 {/* Apply Button */}
                 <div className="sm:w-auto xs:w-auto">
-                    <Button variant={'outline'} className="text-gray-600 dark:text-gray-400 dark:hover:text-white">Apply For This</Button>
+                    <Button variant={'outline'} className="text-gray-600 dark:text-gray-400 dark:hover:text-white">Apply</Button>
                   {/* <button className="sm:w-auto xs:w-auto rounded-full bg-orange-300 hover:bg-orange-400 text-gray-700 dark:text-white font-medium text-sm px-5 py-2 transition duration-200">
                     Apply
                   </button> */}
