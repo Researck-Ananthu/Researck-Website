@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 import BlackSection from "@/components/ui/BlackSection";
 import { BgHoverBoxes } from "@/components/ui/container/BgHoverBoxes";
-import SimpleGridHeading from "@/components/ui/SimpleGridHeading";
+// import SimpleGridHeading from "@/components/ui/SimpleGridHeading";
 import SimpleParagraph from "@/components/ui/SimpleParagraph";
 import ThreeDCardContainer, {
     CardBody,
@@ -14,7 +14,7 @@ import ThreeDCardContainer, {
 } from "@/components/ui/card/ThreeDCardContainer";
 
 import { CheckCheckIcon } from "lucide-react";
-import { placeHolderImg, whatWeDo, whatWeDoHeading, whatWeDoParagraph } from "@/lib/constant";
+import { placeHolderImg, whatWeDo, whatWeDoParagraph } from "@/lib/constant";
 
 
 
@@ -24,14 +24,14 @@ const WhatWeDoSection = () => {
             <BgHoverBoxes />
 
             {/* Open - Heading */}
-            <SimpleGridHeading
+            {/* <SimpleGridHeading
                 whiteScheme={false}
                 grid={false}
                 cover={true}
-                startText={whatWeDoHeading.headingStart}
+                // startText={whatWeDoHeading.headingStart}
                 highlightText={whatWeDoHeading.headingHighlight}
                 endText={whatWeDoHeading.headingEnd}
-            />
+            /> */}
             {/* Close - Heading */}
 
             {/* Open - SimpleParagraph */}
