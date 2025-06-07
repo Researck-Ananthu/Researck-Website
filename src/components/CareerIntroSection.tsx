@@ -8,6 +8,7 @@ import {
 } from "@/lib/constant";
 import { Button } from "@/components/ui/button";
 import CareerApplicationForm from "@/components/ui/CareerForm";
+import CareerCultureHighlights from "./ui/CareerCulture";
 
 const CareerIntroSection = () => {
   const [formOpen, setFormOpen] = useState(false);
@@ -89,8 +90,7 @@ const CareerIntroSection = () => {
           {careerParagraph.paragraphEnd}
         </p>
       </div>
-      {/* ───────────────────────────────────────────── */}
-      {/* Open Positions Section - Responsive & Enhanced */}
+      {/* Open Positions Section*/}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
         <div className="rounded-2xl bg-white dark:bg-neutral-800 shadow-xl px-6 sm:px-10 py-10">
           <h3 className="text-2xl sm:text-3xl font-semibold text-center text-foreground mb-10">
@@ -110,7 +110,6 @@ const CareerIntroSection = () => {
                     {job.title}
                   </p>
                 </div>
-
                 <div className="sm:w-auto xs:w-auto">
                   <Button
                     variant={"outline"}
@@ -119,9 +118,6 @@ const CareerIntroSection = () => {
                   >
                     Apply
                   </Button>
-                  {/* <button className="sm:w-auto xs:w-auto rounded-full bg-orange-300 hover:bg-orange-400 text-gray-700 dark:text-white font-medium text-sm px-5 py-2 transition duration-200">
-                    Apply
-                  </button> */}
                 </div>
               </div>
             ))}
@@ -134,6 +130,9 @@ const CareerIntroSection = () => {
         onClose={() => setFormOpen(false)}
         jobTitle={selectedJob}
       />
+
+      <CareerCultureHighlights  />
+
     </section>
   );
 };
