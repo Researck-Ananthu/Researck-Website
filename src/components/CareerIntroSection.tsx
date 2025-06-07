@@ -62,8 +62,6 @@ const CareerIntroSection = () => {
                 "linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%)",
             }}
           />
-
-          {/* Heading */}
           <h2
             className="relative z-10 text-balance break-words text-xl sm:text-4xl md:text-6xl font-extrabold uppercase leading-tight tracking-tight"
             style={{ fontFamily: "var(--font-sora), sans-serif" }}
@@ -95,19 +93,16 @@ const CareerIntroSection = () => {
       {/* Open Positions Section - Responsive & Enhanced */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
         <div className="rounded-2xl bg-white dark:bg-neutral-800 shadow-xl px-6 sm:px-10 py-10">
-          {/* Section Heading */}
           <h3 className="text-2xl sm:text-3xl font-semibold text-center text-foreground mb-10">
             {careerJob.heading}
           </h3>
 
-          {/* Jobs List */}
           <div className="space-y-6">
             {careerJob.openings.map((job, index) => (
               <div
                 key={index}
                 className="flex flex-col xs:flex-row xs:items-center xs:justify-between gap-3 xs:gap-4 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-4 hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out bg-muted/40 dark:bg-muted/10"
               >
-                {/* Title */}
                 <div className="w-full text-left">
                   <p
                     className={`text-base sm:text-lg font-semibold ${job.color} tracking-tight dark:text-gray-300`}
@@ -116,7 +111,6 @@ const CareerIntroSection = () => {
                   </p>
                 </div>
 
-                {/* Apply Button */}
                 <div className="sm:w-auto xs:w-auto">
                   <Button
                     variant={"outline"}

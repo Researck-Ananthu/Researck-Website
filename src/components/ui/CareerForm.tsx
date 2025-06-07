@@ -67,7 +67,7 @@ const CareerApplicationForm: React.FC<CareerApplicationFormProps> = ({
         </DialogHeader>
 
         {showSuccess ? (
-          <div className="text-center py-10">
+          <div className="text-center py-10 dark:bg-neutral-700 dark:opacity-45">
             <div className="text-orange-400 text-2xl font-semibold mb-2">
               Success!
             </div>
@@ -82,11 +82,11 @@ const CareerApplicationForm: React.FC<CareerApplicationFormProps> = ({
                 <label className="text-sm font-medium mb-1 block">
                   Full Name
                 </label>
-                <Input name="name" type="text" required />
+                <Input name="name" type="text" placeholder="Enter Your Full Name" required />
               </div>
               <div className="w-full">
                 <label className="text-sm font-medium mb-1 block">Email</label>
-                <Input name="email" type="email" required />
+                <Input name="email" type="email" placeholder="Enter Your Email" required />
               </div>
               <div className="w-full">
                 <label className="text-sm font-medium mb-1 block">Mobile</label>
@@ -96,6 +96,7 @@ const CareerApplicationForm: React.FC<CareerApplicationFormProps> = ({
                   maxLength={10}
                   pattern="\d{10}"
                   title="Enter a 10-digit mobile number"
+                  placeholder="Enter Your Mobile Number"
                   required
                 />
               </div>
