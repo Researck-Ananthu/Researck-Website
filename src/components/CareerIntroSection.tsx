@@ -5,6 +5,7 @@ import {
   careerParagraph,
   careerInfo,
   careerJob,
+  careerBanner,
 } from "@/lib/constant";
 import { Button } from "@/components/ui/button";
 import CareerApplicationForm from "@/components/ui/CareerForm";
@@ -13,6 +14,9 @@ import CareerCultureHighlights from "./ui/CareerCulture";
 const CareerIntroSection = () => {
   const [formOpen, setFormOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState("");
+  const [showCVUpload, setShowCVUpload] = useState(false);
+  const [uploadedCV, setUploadedCV] = useState<File | null>(null);
+  const [cvSent, setCvSent] = useState(false); // new
 
   const handleApplyClick = (jobTitle: string) => {
     setSelectedJob(jobTitle);
@@ -131,8 +135,65 @@ const CareerIntroSection = () => {
         jobTitle={selectedJob}
       />
 
-      <CareerCultureHighlights  />
+      <CareerCultureHighlights />
 
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-5">
+        <div className="rounded-2xl bg-gradient-to-r from-gray-400 to-orange-200 text-white dark:text-white px-6 sm:px-10 py-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 shadow-lg">
+          <div className="text-neutral-800 dark:text-neutral-100">
+            <h4 className="text-xl sm:text-2xl font-bold mb-2">
+              {careerBanner.heading}
+            </h4>
+            <p className="text-sm sm:text-base">{careerBanner.paragraph}</p>
+          </div>
+
+          <div className="text-right">
+            <Button
+              onClick={() => {
+                if (uploadedCV) {
+                  setCvSent(true);
+                  setTimeout(() => {
+                    setShowCVUpload(false);
+                    setUploadedCV(null);
+                    setCvSent(false);
+                  }, 2500);
+                } else {
+                  setShowCVUpload((prev) => !prev);
+                }
+              }}
+              className="bg-gray-300 text-black hover:bg-gray-200 dark:bg-neutral-200 dark:text-black dark:hover:bg-neutral-300 transition-all px-5 py-2 rounded-full text-xs font-semibold"
+            >
+              {careerBanner.buttonText} →
+            </Button>
+
+            {showCVUpload && (
+              <div className="mt-4">
+                {cvSent ? (
+                  <p className="text-sm text-white font-semibold">
+                    ✅ CV Sent Successfully!
+                  </p>
+                ) : (
+                  <>
+                    <input
+                      type="file"
+                      accept=".pdf,.doc,.docx"
+                      onChange={(e) =>
+                        setUploadedCV(e.target.files ? e.target.files[0] : null)
+                      }
+                      className="block w-full text-sm text-gray-900 dark:text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-neutral-200 file:text-black hover:file:bg-neutral-300 mt-2"
+                    />
+                    {uploadedCV && (
+                      <p className="mt-2 text-sm text-white">
+                        Uploaded:{" "}
+                        <span className="font-medium">{uploadedCV.name}</span>
+                      </p>
+                    )}
+                  </>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
