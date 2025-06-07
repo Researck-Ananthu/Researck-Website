@@ -10,13 +10,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import PricingSection from "@/components/PricingSection";
 import EventSection from "@/components/EventSection";
 import CareerIntoSection from "@/components/CareerIntroSection";
-
-// import InfoAndFunSection from "@/components/InfoAndFunSection";
-// import FeaturesSection from "@/components/FeaturesSection";
-// import OurClientSection from "@/components/OurClientSection";
-// import EventSection from "@/components/EventSection";
-// import CareerSection from "@/components/CareerSection";
-// import FooterSection from "@/components/FooterSection";
+import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
     return (
@@ -31,9 +25,7 @@ export default function Home() {
             <PricingSection />
             <EventSection />
             <CareerIntoSection />
-            {/* <OurClientSection />
-            <CareerSection />
-            <FooterSection /> */}
+            <FooterSection />
         </>
     );
 }
