@@ -4,7 +4,7 @@ import { eventSecInfo } from "@/lib/constant";
 
 const EventSection = () => {
   return (
-    <section className="relative isolate w-full overflow-hidden bg-background py-32 md:py-80 2xl:py-130">
+    <section className="relative isolate w-full overflow-hidden bg-background py-32 md:py-60 2xl:py-100">
   {/* Soft blur top gradient */}
   <div className="pointer-events-none absolute top-0 left-0 right-0 h-7 bg-gradient-to-b from-background/100 to-transparent z-10" />
 
@@ -17,7 +17,7 @@ const EventSection = () => {
     alt="Digital Transformation"
     fill
     priority
-    className="object-cover object-center opacity-40 dark:opacity-20"
+    className="object-cover object-center opacity-16 dark:opacity-20"
   />
 
   {/* Content */}
