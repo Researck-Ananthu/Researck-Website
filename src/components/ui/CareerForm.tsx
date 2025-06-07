@@ -23,8 +23,8 @@ interface CareerApplicationFormProps {
   jobTitle: string;
 }
 
-const districts = ["KTM", "TVM", "TSR"];
-const states = ["KL", "TN", "KA"];
+const districts = ["KTM", "TVM", "TSR", "KNR", "KLM", "EKM", "ALP", "KZD", "WYN", "KZHKD", "MLP", "IDK", "PTN", "PLKD"];
+// const states = ["KL", "TN", "KA"];
 const currentYear = new Date().getFullYear();
 const yearOptions = Array.from({ length: 8 }, (_, i) => currentYear - 7 + i);
 const maxDOBYear = currentYear - 20;
@@ -82,11 +82,21 @@ const CareerApplicationForm: React.FC<CareerApplicationFormProps> = ({
                 <label className="text-sm font-medium mb-1 block">
                   Full Name
                 </label>
-                <Input name="name" type="text" placeholder="Enter Your Full Name" required />
+                <Input
+                  name="name"
+                  type="text"
+                  placeholder="Enter Your Full Name"
+                  required
+                />
               </div>
               <div className="w-full">
                 <label className="text-sm font-medium mb-1 block">Email</label>
-                <Input name="email" type="email" placeholder="Enter Your Email" required />
+                <Input
+                  name="email"
+                  type="email"
+                  placeholder="Enter Your Email"
+                  required
+                />
               </div>
               <div className="w-full">
                 <label className="text-sm font-medium mb-1 block">Mobile</label>
@@ -99,6 +109,40 @@ const CareerApplicationForm: React.FC<CareerApplicationFormProps> = ({
                   placeholder="Enter Your Mobile Number"
                   required
                 />
+              </div>
+              {/* Gender (Radio Buttons) */}
+              <div className="w-full">
+                <label className="text-sm font-medium mb-1 block">Gender</label>
+                <div className="flex items-center gap-4 mt-1">
+                  <label className="flex items-center gap-2 text-sm">
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="Male"
+                      required
+                      className="accent-orange-400"
+                    />
+                    Male
+                  </label>
+                  <label className="flex items-center gap-2 text-sm">
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="Female"
+                      className="accent-orange-400"
+                    />
+                    Female
+                  </label>
+                  <label className="flex items-center gap-2 text-sm">
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="Other"
+                      className="accent-orange-400"
+                    />
+                    Other
+                  </label>
+                </div>
               </div>
               <div className="w-full">
                 <label className="text-sm font-medium mb-1 block">
@@ -117,7 +161,7 @@ const CareerApplicationForm: React.FC<CareerApplicationFormProps> = ({
                   </SelectContent>
                 </Select>
               </div>
-              <div className="w-full">
+              {/* <div className="w-full">
                 <label className="text-sm font-medium mb-1 block">State</label>
                 <Select required>
                   <SelectTrigger className="w-full">
@@ -131,7 +175,7 @@ const CareerApplicationForm: React.FC<CareerApplicationFormProps> = ({
                     ))}
                   </SelectContent>
                 </Select>
-              </div>
+              </div> */}
               <div className="w-full">
                 <label className="text-sm font-medium mb-1 block">
                   Date of Birth
@@ -140,6 +184,20 @@ const CareerApplicationForm: React.FC<CareerApplicationFormProps> = ({
                   name="dob"
                   type="date"
                   max={`${maxDOBYear}-12-31`}
+                  required
+                />
+              </div>
+              {/* Years of Experience */}
+              <div className="w-full">
+                <label className="text-sm font-medium mb-1 block">
+                  Years of Experience
+                </label>
+                <Input
+                  name="experience"
+                  type="number"
+                  min={0}
+                  max={50}
+                  placeholder="e.g. 3"
                   required
                 />
               </div>
