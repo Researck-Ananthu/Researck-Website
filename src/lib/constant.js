@@ -696,7 +696,7 @@ export const featureTools = [
             "Figma is a cloud-based design tool that allows designers to collaborate in real-time. It is widely used for UI/UX design, prototyping, and creating design systems.",
     },
     {
-        name: "Tailwind CSS",
+        name: "Tailwind",
         icon: (
             <SiTailwindcss color="#2DD4BF" className="size-6 text-teal-400" />
         ),
@@ -1013,7 +1013,7 @@ export const footerContent = {
         details: [
             {
                 icon: "FaMapLocationDot",
-                text: "61-A, Elm street, India.",
+                text: "3rd Floor, Kulathunkal Towers, Perunna, Changanassery",
             },
             {
                 icon: "PhoneIcon",
@@ -1062,7 +1062,7 @@ export const footerContent = {
         buttonText: "Subscribe",
     },
     socialLinks: [
-        { icon: "FaSquareXTwitter", href: "#", label: "Twitter" },
+        { icon: "FaTwitterSquare", href: "https://researck-website.vercel.app/", label: "Twitter" },
         { icon: "FaInstagramSquare", href: "#", label: "Instagram" },
         { icon: "FaFacebookSquare", href: "#", label: "Facebook" },
         { icon: "FaYoutubeSquare", href: "#", label: "YouTube" },
