@@ -1,31 +1,31 @@
 import React from "react";
 
-import HeaderSection from "@/components/Header";
-import HeroSection from "@/components/Herosection2";
-import PortfolioSection from "@/components/PortFolio2";
-import WhatWeDoSection from "@/components/WhatWeDo";
-import AboutUsSection from "@/components/AboutSection";
-import InfoAndFunSection from "@/components/InfoSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import PricingSection from "@/components/PricingSection";
-import EventSection from "@/components/EventSection";
-import CareerIntoSection from "@/components/CareerIntroSection";
-import FooterSection from "@/components/FooterSection";
+import HeaderSection from "@/feature/Header";
+import HeroSection from "@/feature/Herosection";
+import PortfolioSection from "@/feature/PortFolioSection";
+import WhatWeDoSection from "@/feature/WhatWeDo";
+import AboutUsSection from "@/feature/AboutSection";
+import OurFocusSection from "@/feature/OurFocuseSection";
+import FeaturesSection from "@/feature/FeaturesSection";
+import PricingSection from "@/feature/PricingSection";
+import EventSection from "@/feature/EventSection";
+import CareerSection from "@/feature/CareerSection";
+import FooterSection from "@/feature/FooterSection";
 
 export default function Home() {
-    return (
-        <>
-            <HeaderSection />
-            <HeroSection />
-            <PortfolioSection/>
-            <WhatWeDoSection />
-            <AboutUsSection />
-            <InfoAndFunSection />
-            <FeaturesSection />
-            <PricingSection />
-            <EventSection />
-            <CareerIntoSection />
-            <FooterSection />
-        </>
-    );
+   return (
+      <>
+         <HeaderSection />
+         <HeroSection />
+         <PortfolioSection />
+         <WhatWeDoSection />
+         <AboutUsSection />
+         <OurFocusSection />
+         <FeaturesSection />
+         <PricingSection />
+         <EventSection />
+         <CareerSection />
+         <FooterSection />
+      </>
+   );
 }
