@@ -84,7 +84,7 @@ const PortfolioSection = () => {
          {/* Cards Displayed Section */}
          <div className="mt-16 w-full px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-screen-2xl">
-               <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+               <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
                   {portfolioGridItems.map(
                      (
                         item,
@@ -109,7 +109,7 @@ const PortfolioSection = () => {
                                        alt={item.title}
                                        width={600}
                                        height={400}
-                                       className="h-56 w-full rounded-lg object-cover 2xl:h-75"
+                                       className="h-56 w-full rounded-lg object-cover 2xl:h-30"
                                        style={{ objectPosition: "center" }}
                                     />
                                  </div>
