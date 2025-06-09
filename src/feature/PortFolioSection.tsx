@@ -19,8 +19,8 @@ import { Button } from "@/components/ui/button";
 const PortfolioSection = () => {
    return (
       <section
-         className="bg-muted/50 text-foreground w-full overflow-hidden py-16 md:py-20 lg:py-24"
          id="Portfolio"
+         className="bg-muted/50 text-foreground w-full overflow-hidden py-16 md:py-20 lg:py-24"
       >
          {/* Heading + Paragraph */}
          <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
