@@ -24,9 +24,11 @@ const CareerIntroSection = () => {
    };
    return (
       <section
-         className="bg-muted/50 text-foreground w-full overflow-hidden py-16 md:py-20 lg:py-24"
+         className="bg-muted/50 text-foreground relative w-full scroll-mt-24 overflow-hidden py-16 md:py-20 lg:py-24"
          id="Careers"
       >
+         <div className="absolute -top-17 h-0 w-0" id="Careers-anchor" />
+
          {/* Container */}
          <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
             {/* Subheading Badge */}
@@ -117,7 +119,7 @@ const CareerIntroSection = () => {
                         <div className="xs:w-auto sm:w-auto">
                            <Button
                               variant={"outline"}
-                              className="text-gray-600 dark:text-gray-400 dark:hover:text-white cursor-pointer"
+                              className="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:text-white"
                               onClick={() => handleApplyClick(job.title)}
                            >
                               Apply
