@@ -69,7 +69,7 @@ const FocusHighlights = () => {
                focuses.map((_, idx) => (prev.includes(idx) ? -1 : idx))
             );
             playFlipSound();
-         }, 1100);
+         }, 2000);
       } else {
          if (intervalRef.current) clearInterval(intervalRef.current);
       }
@@ -90,15 +90,15 @@ const FocusHighlights = () => {
          {/* Hidden local audio */}
          <audio ref={flipSoundRef} src="/sounds/flip.mp3" preload="auto" />
 
-         <div className="mx-auto grid w-full max-w-[2000px] grid-cols-1 gap-6 px-4 sm:grid-cols-2 sm:px-6 md:grid-cols-3 md:gap-8 lg:px-8 xl:grid-cols-4 xl:gap-10 2xl:gap-1">
+         <div className="mx-auto grid w-full max-w-[2000px] grid-cols-1 gap-6 px-4 sm:grid-cols-2 sm:px-6 md:grid-cols-3 md:gap-8 lg:px-6 2xl:px-0 xl:grid-cols-4 xl:gap-3 2xl:gap-6">
             {focuses.map((focus, i) => (
                <motion.div
                   key={focus.title}
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                     delay: i * 0.2,
-                     duration: 0.6,
+                     delay: i * 0.1,
+                     duration: 0.8,
                      ease: "easeOut",
                   }}
                   viewport={{ once: true }}
