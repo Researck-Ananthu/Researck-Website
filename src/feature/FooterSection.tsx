@@ -34,7 +34,7 @@ export default function FooterSection() {
       footerContent;
 
    return (
-      <footer className="bg-background text-foreground border-t pt-10">
+      <footer id="Footer" className="bg-background text-foreground border-t pt-10">
          <div className="mx-auto max-w-7xl space-y-10 px-4 sm:px-6 lg:px-8">
             {/* Main Grid */}
             <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
