@@ -19,7 +19,7 @@ import { cn } from "@/lib/utils";
 const PricingSection = () => {
    return (
       <section
-         id="pricing"
+         id="Pricing"
          className="w-full py-6 md:py-15 lg:py-17 xl:py-20 2xl:py-30"
       >
          <div className="selection-orange container">
