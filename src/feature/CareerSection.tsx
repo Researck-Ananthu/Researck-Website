@@ -117,7 +117,7 @@ const CareerIntroSection = () => {
                         <div className="xs:w-auto sm:w-auto">
                            <Button
                               variant={"outline"}
-                              className="text-gray-600 dark:text-gray-400 dark:hover:text-white"
+                              className="text-gray-600 dark:text-gray-400 dark:hover:text-white cursor-pointer"
                               onClick={() => handleApplyClick(job.title)}
                            >
                               Apply
