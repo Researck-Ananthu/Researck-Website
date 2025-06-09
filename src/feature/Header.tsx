@@ -50,7 +50,7 @@ const HeaderSection = () => {
   }, []);
 
   return (
-    <header className="bg-background/75 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur-xs">
+    <header className="bg-background/75 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur-xs selection-orange">
       <div className="mx-auto flex h-18 w-full max-w-none items-center justify-between px-4 sm:px-6 lg:px-8 xl:px-7 2xl:px-8">
         {/* Logo */}
         <Link href="/" className="inline-flex items-center gap-1">

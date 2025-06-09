@@ -7,7 +7,7 @@ import CountUp from "react-countup";
 const InfoAndFunSection = () => {
    return (
       <section
-         className="text-foreground relative w-full overflow-hidden py-16 md:py-20 lg:py-24"
+         className="text-foreground relative w-full overflow-hidden py-16 md:py-20 lg:py-24 selection-orange"
          id="InfoAndFun"
       >
          {/* Light Grid Background */}

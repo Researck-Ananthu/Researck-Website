@@ -17,7 +17,7 @@ const EventSection = () => {
             alt="Digital Transformation"
             fill
             priority
-            className="object-cover object-center opacity-16 dark:opacity-20"
+            className="object-cover object-center opacity-18 dark:opacity-20"
          />
 
          {/* Content */}

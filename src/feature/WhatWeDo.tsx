@@ -10,7 +10,7 @@ const WhatWeDoSection = () => {
    return (
       <section
          id="WhatWeDo"
-         className="text-foreground bg-background relative w-full overflow-hidden py-16 md:py-20 lg:py-24 dark:bg-black"
+         className="text-foreground bg-background relative w-full overflow-hidden py-16 md:py-20 lg:py-24 dark:bg-black selection-orange"
       >
          {/* Grid Background Overlay */}
          <div

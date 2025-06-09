@@ -74,7 +74,7 @@ const CareerApplicationForm: React.FC<CareerApplicationFormProps> = ({
 
    return (
       <Dialog open={open} onOpenChange={onClose}>
-         <DialogContent className="max-h-[80vh] overflow-y-auto sm:max-h-[85vh] lg:max-h-[90vh] xl:max-h-[100vh]">
+         <DialogContent className="max-h-[80vh] overflow-y-auto sm:max-h-[85vh] lg:max-h-[90vh] xl:max-h-[100vh] selection-orange">
             <DialogHeader>
                <DialogTitle className="text-xl font-bold">
                   Apply for: {jobTitle}

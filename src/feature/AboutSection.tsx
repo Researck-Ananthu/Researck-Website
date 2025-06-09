@@ -12,7 +12,7 @@ const AboutUsSection = () => {
    return (
       <section
          data-section="About"
-         className="bg-muted/50 text-foreground relative w-full scroll-mt-24 overflow-hidden py-16 md:py-20 lg:py-24"
+         className="bg-muted/50 text-foreground relative w-full scroll-mt-24 overflow-hidden py-16 md:py-20 lg:py-24 selection-orange"
          id="About"
       >
          <div className="absolute -top-17 h-0 w-0" id="About-anchor" />

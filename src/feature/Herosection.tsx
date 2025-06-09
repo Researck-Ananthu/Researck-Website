@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
    return (
-      <section id="Home" data-section="Home" className="bg-background text-foreground h-screen w-full pt-1 xl:pt-3 scroll-mt-24">
+      <section id="Home" data-section="Home" className="bg-background text-foreground h-screen w-full pt-1 xl:pt-3 scroll-mt-24 selection-orange">
          <div className="mx-auto h-full w-full max-w-[1920px] px-6 md:px-12">
             <div className="grid h-full grid-cols-1 lg:grid-cols-2">
                {/* Left Column */}

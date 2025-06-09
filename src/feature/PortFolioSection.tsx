@@ -21,7 +21,7 @@ const PortfolioSection = () => {
  <section
   id="Portfolio"
   data-section="Portfolio"
-  className="relative scroll-mt-24 bg-muted/50 text-foreground w-full overflow-hidden py-16 md:py-20 lg:py-24"
+  className="relative scroll-mt-24 bg-muted/50 text-foreground w-full overflow-hidden py-16 md:py-20 lg:py-24 selection-orange"
 >
      <div className="absolute -top-17 h-0 w-0" id="Portfolio-anchor" />
 
