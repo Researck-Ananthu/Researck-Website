@@ -536,22 +536,22 @@ export const focuses = [
       title: "Security",
       description:
          "We follow best practices and use cutting-edge encryption to protect data.",
-      image: "/images/fun/security.jpg",
-      flip_image: "/images/fun/security-2.jpg",
+      image: "/images/fun/security2.jpg",
+      flip_image: "/images/fun/security3.jpg",
    },
    {
       title: "Mobile Friendly",
       description:
          "Seamless, responsive design optimized for all screen sizes and devices.",
-      image: "/images/fun/mobile.jpg",
-      flip_image: "/images/fun/mobile-2.jpg",
+      image: "/images/fun/mobile2.jpg",
+      flip_image: "/images/fun/mobile-2 (1).jpg",
    },
    {
       title: "Performance",
       description:
          "We build highly optimized applications for blazing fast performance.",
-      image: "/images/fun/performance.jpg",
-      flip_image: "/images/fun/performance-2.jpg",
+      image: "/images/fun/performance2.jpg",
+      flip_image: "/images/fun/performance-3.jpg",
    },
    {
       title: "Powerful APIs",
