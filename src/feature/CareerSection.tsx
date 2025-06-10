@@ -27,7 +27,7 @@ const CareerIntroSection = () => {
          className="bg-muted/50 text-foreground relative w-full scroll-mt-24 overflow-hidden py-16 md:py-20 lg:py-24 selection-orange"
          id="Careers"
       >
-         <div className="absolute -top-17 h-0 w-0" id="Careers-anchor" />
+         <div className="absolute -top-17 h-0 w-0" id="Careers-Page" />
 
          {/* Container */}
          <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
