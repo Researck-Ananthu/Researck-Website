@@ -207,12 +207,12 @@ code, pre {
  */
 
 /* globals.css */
-.bg-hOrangeSkewRectangleSvg {
+/* .bg-hOrangeSkewRectangleSvg {
    background-image: url("/Bg-Skew-Rectangle-Orange.svg");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-}
+} */
 
 @media (min-width: 640px) and (max-width: 768px) {
    .myh2 {
