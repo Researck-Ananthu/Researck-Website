@@ -7,6 +7,14 @@ import {
    careerJob,
    careerBanner,
 } from "@/lib/constant";
+import {
+   Pagination,
+   PaginationContent,
+   PaginationItem,
+   PaginationLink,
+   PaginationPrevious,
+   PaginationNext,
+} from "@/components/ui/pagination";
 import { Button } from "@/components/ui/button";
 import CareerApplicationForm from "@/components/custom/CareerForm";
 import CareerCultureHighlights from "../components/custom/CareerCulture";
@@ -18,13 +26,21 @@ const CareerIntroSection = () => {
    const [uploadedCV, setUploadedCV] = useState<File | null>(null);
    const [cvSent, setCvSent] = useState(false); // new
 
+   const jobsPerPage = 4;
+   const [currentPage, setCurrentPage] = useState(1);
+
+   const totalPages = Math.ceil(careerJob.openings.length / jobsPerPage);
+   const startIndex = (currentPage - 1) * jobsPerPage;
+   const endIndex = startIndex + jobsPerPage;
+   const visibleJobs = careerJob.openings.slice(startIndex, endIndex);
+
    const handleApplyClick = (jobTitle: string) => {
       setSelectedJob(jobTitle);
       setFormOpen(true);
    };
    return (
       <section
-         className="bg-muted/50 text-foreground relative w-full scroll-mt-24 overflow-hidden py-16 md:py-20 lg:py-24 selection-orange"
+         className="bg-muted/50 text-foreground selection-orange relative w-full scroll-mt-24 overflow-hidden py-16 md:py-20 lg:py-24"
          id="Careers"
       >
          <div className="absolute -top-17 h-0 w-0" id="Careers-Page" />
@@ -104,7 +120,7 @@ const CareerIntroSection = () => {
                </h3>
 
                <div className="space-y-6">
-                  {careerJob.openings.map((job, index) => (
+                  {visibleJobs.map((job, index) => (
                      <div
                         key={index}
                         className="xs:flex-row xs:items-center xs:justify-between xs:gap-4 bg-muted/40 dark:bg-muted/10 flex flex-col gap-3 rounded-lg border border-gray-200 px-4 py-4 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md dark:border-gray-700"
@@ -128,6 +144,59 @@ const CareerIntroSection = () => {
                      </div>
                   ))}
                </div>
+               {totalPages > 1 && (
+                  <div className="mt-8 flex justify-center">
+                     <Pagination>
+                        <PaginationContent>
+                           <PaginationItem>
+                              <PaginationPrevious
+                                 onClick={() =>
+                                    setCurrentPage((prev) =>
+                                       Math.max(prev - 1, 1)
+                                    )
+                                 }
+                                 className={
+                                    currentPage === 1
+                                       ? "pointer-events-none opacity-50"
+                                       : ""
+                                 }
+                              />
+                           </PaginationItem>
+
+                           {[...Array(totalPages)].map((_, i) => (
+                              <PaginationItem key={i}>
+                                 <PaginationLink
+                                    isActive={currentPage === i + 1}
+                                    onClick={() => setCurrentPage(i + 1)}
+                                    className={`transition-colors ${
+                                       currentPage === i + 1
+                                          ? "bg-orange-300 text-white dark:bg-orange-300 dark:text-black"
+                                          : "hover:bg-orange-100 hover:text-black dark:hover:bg-orange-200 dark:hover:text-gray-700"
+                                    }`}
+                                 >
+                                    {i + 1}
+                                 </PaginationLink>
+                              </PaginationItem>
+                           ))}
+
+                           <PaginationItem>
+                              <PaginationNext
+                                 onClick={() =>
+                                    setCurrentPage((prev) =>
+                                       Math.min(prev + 1, totalPages)
+                                    )
+                                 }
+                                 className={
+                                    currentPage === totalPages
+                                       ? "pointer-events-none opacity-50"
+                                       : ""
+                                 }
+                              />
+                           </PaginationItem>
+                        </PaginationContent>
+                     </Pagination>
+                  </div>
+               )}
             </div>
          </div>
 
