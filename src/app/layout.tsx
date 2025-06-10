@@ -1,3 +1,4 @@
+import ScrollToTop from "@/components/custom/ScrollToTop";
 import React, { ReactNode } from "react";
 import type { Metadata } from "next";
 import {
@@ -131,6 +132,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
                enableColorScheme
             >
                <ActiveThemeProvider>{children}</ActiveThemeProvider>
+               <ScrollToTop />
             </ThemeProvider>
          </body>
       </html>
