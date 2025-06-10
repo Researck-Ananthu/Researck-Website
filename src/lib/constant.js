@@ -19,33 +19,6 @@ import pocService from "@/assets/images/portfoliogrid/poc2.jpg";
 import projectManagement from "@/assets/images/portfoliogrid/recovery.jpg";
 import machineIntergration from "@/assets/images/portfoliogrid/industrial-iot-solution.svg";
 
-import mobileImage from "@/assets/images/fun/bento-03-mobile-friendly.png";
-import performanceImage from "@/assets/images/fun/bento-03-performance.png";
-import securityImage from "@/assets/images/fun/bento-03-security.png";
-
-import park from "@/assets/images/client/Computer park.png";
-import global from "@/assets/images/client/Global Builders.png";
-import onestop from "@/assets/images/client/Onestop.png";
-import varnam from "@/assets/images/client/Varnam Designs.png";
-import remi from "@/assets/images/client/Remi design studio.png";
-import energylife from "@/assets/images/client/Energy Life.png";
-
-// import reactCode from "@/assets/images/features/codes/react.jpg";
-// import jsCode from "@/assets/images/features/codes/js.jpg";
-// import tsCode from "@/assets/images/features/codes/type.jpg";
-// import nodeCode from "@/assets/images/features/codes/node.jpg";
-// import pythonCode from "@/assets/images/features/codes/python.jpg";
-// import javaCode from "@/assets/images/features/codes/java.jpg";
-// import dockerCode from "@/assets/images/features/codes/docker.jpg";
-// import kuberCode from "@/assets/images/features/codes/kuber.png";
-// import gitCode from "@/assets/images/features/codes/git.jpg";
-// import figmaUi from "@/assets/images/features/codes/figma.jpg";
-// import tailCode from "@/assets/images/features/codes/tailwind.jpg";
-// import sqlQuery from "@/assets/images/features/codes/sql.png";
-// import mongoQuery from "@/assets/images/features/codes/mongo.png";
-// import awsCloud from "@/assets/images/features/codes/aws2.jpg";
-// import mysqlQuery from "@/assets/images/features/codes/mysql.jpg";
-
 import {
    BotMessageSquareIcon,
    BrainIcon,
@@ -562,50 +535,6 @@ export const focuses = [
    },
 ];
 
-export const infoFunSecGrid = [
-   {
-      title: "Mobile friendly",
-      description:
-         "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-      imageUrl: mobileImage,
-   },
-   {
-      title: "Performance",
-      description:
-         "Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit. Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.",
-      imageUrl: performanceImage,
-   },
-   {
-      title: "Security",
-      description:
-         "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi.",
-      imageUrl: securityImage,
-   },
-   {
-      title: "Powerful APIs",
-      description:
-         "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget sem sodales gravida.",
-      codeFileName: "NotificationSetting.jsx",
-      mainFile: "App.jsx",
-      codeSnippet: `
-import { useState } from 'react';
-import { Switch } from '@headlessui/react';
-
-function Example() {
-    const [enabled, setEnabled] = useState(true);
-
-    return (
-        <form action="/notification-settings" method="post">
-            <Switch checked={enabled} onChange={setEnabled} name="notifications">
-                {/* ... */}
-            </Switch>
-            <button>Submit</button>
-        </form>
-    );
-}
-        `,
-   },
-];
 
 // ===================================================
 // Feature Section
@@ -745,33 +674,6 @@ export const featureDatabases = [
 ];
 
 // ===================================================
-// Client Section
-// ===================================================
-export const clientHeading = {
-   headingStart: "Hear from our satisfied ",
-   headingHighlight: "clients",
-   headingEnd: ".",
-};
-
-export const clientParagraph = {
-   paragraphStart:
-      "At Researck, we go beyond software development — we build\n" +
-      "partnerships. Our team delivers customized solutions tailored to your\n" +
-      "unique needs, leveraging cutting-edge programming languages,\n" +
-      "frameworks, and cloud technologies. From concept to launch, we turn\n" +
-      "your vision into powerful, scalable, and user-friendly software that\n" +
-      "drives growth and success.",
-   paragraphHighlight: "",
-   paragraphEnd:
-      "At Researck, we go beyond software development — we build\n" +
-      "partnerships. Our team delivers customized solutions tailored to your\n" +
-      "unique needs, leveraging cutting-edge programming languages,\n" +
-      "frameworks, and cloud technologies. From concept to launch, we turn\n" +
-      "your vision into powerful, scalable, and user-friendly software that\n" +
-      "drives growth and success.",
-};
-
-// ===================================================
 // Pricing Section
 // ===================================================
 
@@ -860,79 +762,6 @@ export const subscriptionPlans = [
    },
 ];
 
-export const clientTestimonials = [
-   {
-      id: 0,
-      clientName: "Arjun Nair",
-      clientPosition: "IT Manager",
-      clientCompany: "TechWave Solutions",
-      clientImage:
-         "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg?semt=ais_hybrid",
-      testimonialText:
-         "Partnering with this team has streamlined our operations and boosted efficiency. Their innovative solutions are second to none.",
-      companyLogo: park,
-      category: "IT Consulting",
-   },
-   {
-      id: 1,
-      clientName: "Sneha Sharma",
-      clientPosition: "Software Developer",
-      clientCompany: "Innovatech Pvt Ltd",
-      clientImage:
-         "https://img.freepik.com/free-psd/3d-rendering-hair-style-avatar-design_23-2151869165.jpg?semt=ais_hybrid",
-      testimonialText:
-         "Their attention to detail and dedication to delivering high-quality software have been instrumental in our success.",
-      companyLogo: global,
-      category: "Software Development",
-   },
-   {
-      id: 2,
-      clientName: "Ravi Kulkarni",
-      clientPosition: "Project Manager",
-      clientCompany: "NextGen Technologies",
-      clientImage:
-         "https://img.freepik.com/premium-psd/3d-illustration-with-online-avatar_23-2151303107.jpg?semt=ais_hybrid",
-      testimonialText:
-         "This team has revolutionized the way we manage projects. Their tools and insights are a game-changer for our organization.",
-      companyLogo: onestop,
-      category: "Project Management",
-   },
-   {
-      id: 3,
-      clientName: "Priya Verma",
-      clientPosition: "UI/UX Designer",
-      clientCompany: "Design Matrix",
-      clientImage:
-         "https://img.freepik.com/premium-psd/3d-rendering-hair-style-avatar-design_23-2151869169.jpg?semt=ais_hybrid",
-      testimonialText:
-         "The creative and user-centric approach of this team has brought our designs to life in the best possible way.",
-      companyLogo: varnam,
-      category: "Design",
-   },
-   {
-      id: 4,
-      clientName: "Ankit Joshi",
-      clientPosition: "Product Owner",
-      clientCompany: "BizCraft Solutions",
-      clientImage:
-         "https://img.freepik.com/free-psd/3d-rendering-hair-style-avatar-design_23-2151869145.jpg?semt=ais_hybrid",
-      testimonialText:
-         "Their agile development process and technical expertise have helped us launch successful products on time.",
-      companyLogo: remi,
-      category: "Product Development",
-   },
-   {
-      clientName: "Kavya Menon",
-      clientPosition: "CEO",
-      clientCompany: "Digital Infoware",
-      clientImage:
-         "https://img.freepik.com/free-psd/3d-rendering-hair-style-avatar-design_23-2151869119.jpg?semt=ais_hybrid",
-      testimonialText:
-         "This team's dedication to delivering innovative and reliable software solutions is unparalleled.",
-      companyLogo: energylife,
-      category: "Digital Transformation",
-   },
-];
 
 // ===================================================
 // Event Section
