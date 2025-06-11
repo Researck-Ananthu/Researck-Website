@@ -90,7 +90,7 @@ const FocusHighlights = () => {
          {/* Hidden local audio */}
          <audio ref={flipSoundRef} src="/sounds/flip.mp3" preload="auto" />
 
-         <div className="mx-auto grid w-full max-w-[2000px] grid-cols-1 gap-6 px-4 sm:grid-cols-2 sm:px-6 md:grid-cols-3 md:gap-8 lg:px-6 2xl:px-0 xl:grid-cols-4 xl:gap-3 2xl:gap-6">
+         <div className="mx-auto grid w-full max-w-[2000px] grid-cols-1 gap-6 px-4 sm:grid-cols-2 sm:px-6 md:grid-cols-4 md:gap-3 lg:px-6 2xl:px-0 xl:grid-cols-4 xl:gap-3 2xl:gap-6">
             {focuses.map((focus, i) => (
                <motion.div
                   key={focus.title}
