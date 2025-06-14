@@ -6,8 +6,10 @@ const FeaturesSection = () => {
    return (
       <section
          className="bg-muted/50 text-foreground w-full overflow-hidden py-16 md:py-20 lg:py-24"
-         id="Features"
+         // id="Features"
+         id="About"
       >
+         {/* <div className="absolute -top-17 h-0 w-0" id="About-Page" /> */}
          <div className="selection-orange mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
             <div className="relative mx-auto mb-10 inline-block w-full max-w-full overflow-hidden px-4 py-10 sm:px-6">
                {/* Light Mode Grid Background */}

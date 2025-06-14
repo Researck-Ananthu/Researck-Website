@@ -4,7 +4,11 @@ import { eventSecInfo } from "@/lib/constant";
 
 const EventSection = () => {
    return (
-      <section id="Event" className="bg-background relative isolate w-full overflow-hidden py-32 md:py-60 2xl:py-100">
+      <section
+         // id="Event"
+         id="About"
+         className="bg-background relative isolate w-full overflow-hidden py-32 md:py-60 2xl:py-100"
+      >
          {/* Soft blur top gradient */}
          <div className="from-background/100 pointer-events-none absolute top-0 right-0 left-0 z-10 h-7 bg-gradient-to-b to-transparent" />
 

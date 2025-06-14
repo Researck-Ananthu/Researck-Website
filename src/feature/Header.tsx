@@ -68,7 +68,7 @@ const HeaderSection = () => {
             height={100}
             className="hidden h-14 w-auto object-cover dark:block"
           />
-          <span className="hidden text-xl font-bold whitespace-nowrap sm:inline-block">
+          <span className="hidden text-xl font-bold whitespace-nowrap text-black dark:text-white sm:inline-block">
             Researck
           </span>
         </Link>
@@ -92,13 +92,13 @@ const HeaderSection = () => {
 
         {/* Actions */}
         <div className="font-ibm-plex-sans flex items-center gap-2">
-          <Button
+            <Button
             variant="outline"
-            className="supports-[backdrop-filter]:bg-background/60 rounded-md px-4 py-2 font-medium"
+            className="supports-[backdrop-filter]:bg-background/60 text-black dark:text-white/80 rounded-md px-4 py-2 font-normal"
             asChild
-          >
+            >
             <Link href="#">Start Conversation</Link>
-          </Button>
+            </Button>
           <ThemeToggle />
         </div>
       </div>

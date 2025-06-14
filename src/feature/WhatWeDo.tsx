@@ -9,9 +9,12 @@ import { BorderTrail } from "@/components/motion-primitives/border-trail";
 const WhatWeDoSection = () => {
    return (
       <section
-         id="WhatWeDo"
-         className="text-foreground bg-background relative w-full overflow-hidden py-16 md:py-20 lg:py-24 dark:bg-black selection-orange"
+         id="Portfolio"
+         data-section="Portfolio"
+         // id="WhatWeDo"
+         className="text-foreground bg-background selection-orange relative w-full overflow-hidden py-16 md:py-20 lg:py-24 dark:bg-black"
       >
+         <div className="absolute -top-19 h-0 w-0" id="Portfolio-Page" />
          {/* Grid Background Overlay */}
          <div
             className="pointer-events-none absolute inset-0 z-0"

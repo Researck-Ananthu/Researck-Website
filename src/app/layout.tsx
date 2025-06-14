@@ -121,7 +121,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
          <body
             className={cn(
                `${soraFont.variable} ${spaceGroteskFont.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`,
-               "bg-background overscroll-none antialiased"
+               "min-h-screen text-white bg-background overscroll-none antialiased"
             )}
          >
             <ThemeProvider

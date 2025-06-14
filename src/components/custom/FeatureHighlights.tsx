@@ -15,7 +15,7 @@ export default function FeatureHighlights() {
    ];
 
    return (
-      <section className="px-4 py-16 sm:px-8 lg:px-16 mt-5 xl:mt-10">
+      <section className="px-4 py-16 sm:px-8 lg:px-16 mt-5 xl:mt-10" id="About">
          {/* <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-black dark:text-white">
         Technologies & Tools We Use
       </h2> */}
