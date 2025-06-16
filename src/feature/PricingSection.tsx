@@ -21,16 +21,16 @@ const PricingSection = () => {
       <section
          // id="Pricing"
          id="About"
-         className="w-full py-6 md:py-15 lg:py-17 xl:py-20 2xl:py-30"
+         className="w-full py-6 md:py-15 lg:py-17 xl:py-15 2xl:py-25"
       >
          <div className="selection-orange container">
             {/* Heading */}
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
                <div className="space-y-6">
-                  <div className="bg-primary text-primary-foreground inline-block rounded-lg px-3 py-1 text-sm">
+                  {/* <div className="bg-primary text-primary-foreground inline-block rounded-lg px-3 py-1 text-sm">
                      Pricing
-                  </div>
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  </div> */}
+                  <h2 className="text-4xl mt-10 font-bold tracking-tighter sm:text-5xl lg:text-6xl 2xl:text-7xl">
                      Simple, Transparent Pricing
                   </h2>
                   <p className="text-muted-foreground max-w-[900px] md:text-xl/relaxed">
@@ -41,7 +41,7 @@ const PricingSection = () => {
 
             {/* Plans */}
             {/* <div className="max-w-8xl mx-auto grid grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"> */}
-            <div className="max-w-auto 2xl:max-w-8xl mx-auto grid grid-cols-1 gap-6 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="max-w-auto lg:max-w-6xl 2xl:max-w-8xl mx-auto grid grid-cols-1 gap-4 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                {subscriptionPlans.map((plan, index) => (
                   <Card
                      key={plan.id}

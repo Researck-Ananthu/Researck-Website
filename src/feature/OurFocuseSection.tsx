@@ -12,7 +12,7 @@ const InfoAndFunSection = () => {
          id="About"
          data-section="About"
       >
-         <div className="absolute -top-17 h-0 w-0" id="About-Page" />
+         <div className="absolute -top-17 h-0 w-0" id="About-page" />
          {/* Light Grid Background */}
          <div
             className="pointer-events-none absolute inset-0 block dark:hidden"
@@ -39,7 +39,7 @@ const InfoAndFunSection = () => {
             <div className="w-full px-4 py-10 sm:px-6 lg:px-8">
                {/* Heading */}
                <h2
-                  className="text-2xl leading-tight font-extrabold tracking-tight uppercase sm:text-5xl md:text-6xl"
+                  className="text-2xl font-extrabold tracking-tight uppercase sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl"
                   style={{ fontFamily: "var(--font-sora), sans-serif" }}
                >
                   {infoFunSecHeading.headingStart}
@@ -67,7 +67,7 @@ const InfoAndFunSection = () => {
             <p className="dark:text-muted-foreground sm:text-md text-justify-last-left mx-auto mt-6 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl">
                {infoFunSecParagraph.paragraphStart}
             </p>
-            <p className="dark:text-muted-foreground sm:text-md mx-auto mt-4 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl">
+            <p className="dark:text-muted-foreground sm:text-md mx-auto mt-4 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl hidden md:block">
                {infoFunSecParagraph.paragraphEnd}
             </p>
 
@@ -85,7 +85,7 @@ const InfoAndFunSection = () => {
                </p>
 
                {/* Statistics Cards */}
-               <div className="mt-12 flex w-full flex-col items-center justify-center gap-6 px-4 sm:flex-row sm:gap-4 md:gap-8">
+               <div className="mt-12 flex mb-3 md:mb-12 2xl:mb-16 w-full flex-col mx-auto items-center justify-center gap-6 px-8 sm:flex-row sm:gap-4 md:gap-8">
                   {[
                      {
                         count: 150,
@@ -110,7 +110,7 @@ const InfoAndFunSection = () => {
                         <h4 className="text-4xl font-extrabold text-gray-900 dark:text-white">
                            <CountUp
                               end={item.count}
-                              duration={2.5}
+                              duration={3.1}
                               enableScrollSpy
                               scrollSpyOnce
                            />

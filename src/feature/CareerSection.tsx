@@ -43,16 +43,16 @@ const CareerIntroSection = () => {
          className="bg-muted/50 text-foreground selection-orange relative w-full scroll-mt-24 overflow-hidden py-16 md:py-20 lg:py-24"
          id="Careers"
       >
-         <div className="absolute -top-17 h-0 w-0" id="Careers-Page" />
+         <div className="absolute -top-17 h-0 w-0" id="Careers-page" />
 
          {/* Container */}
          <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
             {/* Subheading Badge */}
-            <div className="mb-8">
+            {/* <div className="mb-8">
                <span className="inline-block rounded-full bg-orange-100 px-4 py-2 text-sm font-semibold tracking-wide text-orange-500 sm:text-base">
                   {careerInfo.highlight}
                </span>
-            </div>
+            </div> */}
 
             {/* Main Heading with Grid BG */}
             <div className="relative mx-auto mb-10 w-full max-w-full px-4 py-10 break-words sm:max-w-[90%] sm:px-6 md:px-10 lg:max-w-4xl">
@@ -86,7 +86,7 @@ const CareerIntroSection = () => {
                   }}
                />
                <h2
-                  className="relative z-10 text-xl leading-tight font-extrabold tracking-tight text-balance break-words uppercase sm:text-4xl md:text-6xl"
+                  className="relative z-10 text-2xl leading-tight font-extrabold tracking-tight text-balance break-words uppercase sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl"
                   style={{ fontFamily: "var(--font-sora), sans-serif" }}
                >
                   {careerHeading.headingStart}
@@ -108,14 +108,14 @@ const CareerIntroSection = () => {
             <p className="dark:text-muted-foreground sm:text-md text-justify-last-left mx-auto mt-2 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl">
                {careerParagraph.paragraphStart}
             </p>
-            <p className="dark:text-muted-foreground sm:text-md text-justify-last-left mx-auto mt-4 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl">
+            <p className="dark:text-muted-foreground sm:text-md text-justify-last-left mx-auto mt-4 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl hidden md:block">
                {careerParagraph.paragraphEnd}
             </p>
          </div>
          {/* Open Positions Section*/}
-         <div className="mx-auto mt-20 max-w-5xl px-4 sm:px-6 lg:px-8">
-            <div className="rounded-2xl bg-white px-6 py-10 shadow-xl sm:px-10 dark:bg-neutral-800">
-               <h3 className="text-foreground mb-10 text-center text-2xl font-semibold sm:text-3xl">
+         <div className="mx-auto mt-5 max-w-5xl px-4 sm:px-6 lg:px-8">
+            <div className="rounded-2xl px-6 py-10 sm:px-10">
+               <h3 className="text-foreground mb-10 text-center text-2xl font-semibold sm:text-4xl">
                   {careerJob.heading}
                </h3>
 
@@ -208,7 +208,7 @@ const CareerIntroSection = () => {
 
          <CareerCultureHighlights />
 
-         <div className="mx-auto mt-5 max-w-5xl px-4 sm:px-6 lg:px-8">
+         <div className="mx-auto mt-10 max-w-5xl px-4 sm:px-6 lg:px-8 mb-6">
             <div className="flex flex-col gap-6 rounded-2xl bg-gradient-to-r from-gray-400 to-orange-200 px-6 py-10 text-white shadow-lg sm:px-10 md:flex-row md:items-center md:justify-between dark:text-white">
                <div className="text-neutral-800 dark:text-neutral-100">
                   <h4 className="mb-2 text-xl font-bold sm:text-2xl">
@@ -233,7 +233,7 @@ const CareerIntroSection = () => {
                            setShowCVUpload((prev) => !prev);
                         }
                      }}
-                     className="rounded-full bg-gray-300 px-5 py-2 text-xs font-semibold text-black transition-all hover:bg-gray-200 dark:bg-neutral-200 dark:text-black dark:hover:bg-neutral-300"
+                     className="rounded-full bg-gray-300 px-5 py-2 text-xs font-semibold text-black transition-all hover:bg-gray-200 dark:bg-neutral-200 dark:text-black dark:hover:bg-neutral-300 w-full"
                   >
                      {careerBanner.buttonText} →
                   </Button>

@@ -56,6 +56,8 @@ import {
    SiPostgresql,
    SiTailwindcss,
    SiTypescript,
+   SiFirebase,
+   SiRedis,
 } from "react-icons/si";
 
 // ===================================================
@@ -182,7 +184,7 @@ export const portfolioGridItems = [
       image:
          mobileAppDev ||
          "https://img.freepik.com/free-vector/awesome-mobile-software-application-development-concept-mobile-phone-with-big-gear_39422-984.jpg?uid=R201435396&ga=GA1.1.964911120.1744880468&w=740",
-      icon: <TabletSmartphoneIcon className="size-6 text-neutral-500" />,
+      icon: <TabletSmartphoneIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 1,
@@ -193,7 +195,7 @@ export const portfolioGridItems = [
       image:
          webAppDev ||
          "https://img.freepik.com/free-photo/ai-site-helping-with-software-production_1268-21620.jpg?ga=GA1.1.1423727093.1736249503",
-      icon: <PanelsTopLeftIcon className="size-6 text-neutral-500" />,
+      icon: <PanelsTopLeftIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 2,
@@ -204,7 +206,7 @@ export const portfolioGridItems = [
       image:
          softwareAppDev ||
          "https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg?ga=GA1.1.1423727093.1736249503&semt=ais_hybrid",
-      icon: <ComputerIcon className="size-6 text-neutral-500" />,
+      icon: <ComputerIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 5,
@@ -215,7 +217,7 @@ export const portfolioGridItems = [
       image:
          ecommercePlatform ||
          "https://img.freepik.com/free-photo/online-purchasing-payment-e-commerce-banking_53876-127604.jpg?uid=R201435396&ga=GA1.1.964911120.1744880468&semt=ais_items_boosted&w=740",
-      icon: <ShoppingBagIcon className="size-6 text-neutral-500" />,
+      icon: <ShoppingBagIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 6,
@@ -226,7 +228,7 @@ export const portfolioGridItems = [
       image:
          apiDevelopment ||
          "https://img.freepik.com/free-vector/technology-isometric-api-illustration_23-2149375823.jpg?uid=R201435396&ga=GA1.1.964911120.1744880468&semt=ais_items_boosted&w=740",
-      icon: <WebhookIcon className="size-6 text-neutral-500" />,
+      icon: <WebhookIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 3,
@@ -237,7 +239,7 @@ export const portfolioGridItems = [
       image:
          healthcareAnalyze ||
          "https://img.freepik.com/free-photo/doctor-using-tablet-diagnose-medical-technology_53876-104202.jpg?uid=R201435396&ga=GA1.1.964911120.1744880468&w=740",
-      icon: <SquareActivityIcon className="size-6 text-neutral-500" />,
+      icon: <SquareActivityIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 4,
@@ -248,7 +250,7 @@ export const portfolioGridItems = [
       image:
          portfolioImg ||
          "https://img.freepik.com/free-photo/top-shot-three-unrecognizable-business-people-sitting-meeting-looking-charts_1098-17726.jpg",
-      icon: <BriefcaseBusinessIcon className="size-6 text-neutral-500" />,
+      icon: <BriefcaseBusinessIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 7,
@@ -259,7 +261,7 @@ export const portfolioGridItems = [
       image:
          smartHome ||
          "https://img.freepik.com/free-vector/gradient-smart-home-isometric-technology-background_52683-4498.jpg",
-      icon: <HousePlugIcon className="size-6 text-neutral-500" />,
+      icon: <HousePlugIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 9,
@@ -270,7 +272,7 @@ export const portfolioGridItems = [
       image:
          machineLearning ||
          "https://img.freepik.com/free-photo/businessman-working-futuristic-office_23-2151003702.jpg",
-      icon: <BrainIcon className="size-6 text-neutral-500" />,
+      icon: <BrainIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 8,
@@ -281,7 +283,7 @@ export const portfolioGridItems = [
       image:
          aiChatBot ||
          "https://img.freepik.com/free-vector/artificial-intelligence-isometric-ai-robot-mobile-phone-screen-chatbot-app_39422-767.jpg",
-      icon: <BotMessageSquareIcon className="size-6 text-neutral-500" />,
+      icon: <BotMessageSquareIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 10,
@@ -292,7 +294,7 @@ export const portfolioGridItems = [
       image:
          saasProject ||
          "https://img.freepik.com/free-photo/saas-concept-collage_23-2149399292.jpg",
-      icon: <SquareKanbanIcon className="size-6 text-neutral-500" />,
+      icon: <SquareKanbanIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 11,
@@ -303,7 +305,7 @@ export const portfolioGridItems = [
       image:
          pocService ||
          "https://img.freepik.com/free-vector/personal-digital-security_74855-4560.jpg",
-      icon: <SquarePercentIcon className="size-6 text-neutral-500" />,
+      icon: <SquarePercentIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 12,
@@ -314,7 +316,7 @@ export const portfolioGridItems = [
       image:
          undefined ||
          "https://img.freepik.com/free-vector/character-illustration-people-with-packages-shipment_53876-66109.jpg?uid=R201435396&ga=GA1.1.964911120.1744880468&w=740",
-      icon: <ScaleIcon className="size-6 text-neutral-500" />,
+      icon: <ScaleIcon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 13,
@@ -325,7 +327,7 @@ export const portfolioGridItems = [
       image:
          projectManagement ||
          "https://vitolavecchia.altervista.org/wp-content/uploads/2018/12/Project-Management.png",
-      icon: <FolderGit2Icon className="size-6 text-neutral-500" />,
+      icon: <FolderGit2Icon className="size-6 text-black dark:text-white" />,
    },
    {
       id: 14,
@@ -336,7 +338,7 @@ export const portfolioGridItems = [
       image:
          machineIntergration ||
          "https://www.bluepixeltech.com/assets/img/solutions/industrial-iot-solution.svg",
-      icon: <CableIcon className="size-6 text-neutral-500" />,
+      icon: <CableIcon className="size-6 text-black dark:text-white" />,
    },
 ];
 
@@ -478,15 +480,53 @@ export const sourceCodeCustomStyle = {
    backgroundClip: "content-box",
 };
 
-export const sourceCode = `function add(a, b) {
-    if (a === undefined || b === undefined) {
-        throw new Error("Missing arguments");
-    }
-    return a + b; // Simple addition
-}
+// constant.ts
 
-const result = add(2, 3); // Output is 5
-console.log("The result is:", result); // Debugging done! 🎉`;
+export const sourceCode = [
+  `function add(a, b) {
+    if (a === undefined || b === undefined) {
+      throw new Error("Missing arguments");
+    }
+    return a + b;
+  }
+
+  console.log("The result is:", add(2, 3));`,
+
+  `const greet = (name: string): string => {
+    return \`Hello, \${name}!\`;
+  };
+
+  console.log(greet("Have a nice day!"));`,
+
+  `const isEven = (num: number): boolean => num % 2 === 0;
+
+  console.log("Is 4 even?", isEven(4));`,
+
+  `useEffect(() => {
+    const timer = setTimeout(() => {
+      console.log("Timer done!");
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);`,
+
+  `const items = ["apple", "banana", "mango"];
+
+  items.forEach((item, index) => {
+    console.log(\`\${index + 1}. \${item}\`);
+  });`,
+
+  `interface User {
+    id: number;
+    name: string;
+  }
+
+  const users: User[] = [
+    { id: 1, name: "Alice" },
+    { id: 2, name: "Bob" },
+  ];`
+];
+
 
 // ===================================================
 // Info And Fun Section
@@ -671,6 +711,19 @@ export const featureDatabases = [
       description:
          "MySQL is an open-source relational database management system that is widely used for web applications. It is known for its performance, reliability, and ease of use.",
    },
+   {
+      name: "Firebase",
+      icon: <SiFirebase color="#FACC15" className="size-6 text-yellow-400" />,
+      description:
+         "Firebase is a Backend-as-a-Service (BaaS) platform by Google offering real-time database, authentication, hosting, and cloud functions, ideal for building web and mobile applications quickly.",
+   },
+   {
+      name: "Redis",
+      icon: <SiRedis color="#EF4444" className="size-6 text-red-500" />,
+      description:
+         "Redis is an open-source in-memory data structure store used as a database, cache, and message broker. It is renowned for its speed and support for various data structures.",
+   },
+
 ];
 
 // ===================================================
@@ -793,7 +846,7 @@ export const careerParagraph = {
 };
 
 export const careerJob = {
-   heading: "Open positions",
+   heading: "Open Positions",
    openings: [
       { title: "UX Designer", color: "text-gray-900" },
       { title: "Software Developer", color: "text-gray-900" },
@@ -865,10 +918,10 @@ export const footerContent = {
       {
          title: "Researck",
          links: [
-            { name: "Home", href: "#home" },
-            { name: "About", href: "#about-us" },
-            { name: "Careers", href: "#career" },
-            { name: "Event", href: "#event" },
+            { name: "Home", href: "#Home-page" },
+            { name: "About", href: "#About-page" },
+            { name: "Careers", href: "#Careers-page" },
+            { name: "Event", href: "#Event-page" },
          ],
       },
       {

@@ -232,7 +232,7 @@ const HeroSection = () => {
       data-section="Home"
       className="relative h-screen w-full pt-1 xl:pt-3 scroll-mt-24 selection-orange overflow-hidden"
     >
-       <div className="absolute -top-19 h-0 w-0" id="Home-Page" />
+       <div className="absolute -top-19 h-0 w-0" id="Home-page" />
 
       {/* Loader overlay */}
       <div
@@ -278,7 +278,7 @@ const HeroSection = () => {
                 SOLUTIONS
               </h1>
             </div>
-            <div className="text-muted-foreground sm:text-sm mb-0 hidden max-w-xl text-sm font-semibold text-wrap sm:block md:text-xl lg:mb-20">
+            <div className="text-muted-foreground sm:text-sm mb-0 hidden max-w-xl text-sm font-semibold text-wrap sm:block md:text-xl lg:mb-30">
               <p className="mt-24 sm:mt-8 md:mt-24">
               Tell your expectations, we will make that happen in an
               economical budget
@@ -297,7 +297,7 @@ const HeroSection = () => {
               </p>
             </div>
             <h2
-              className="-mb-15 text-right text-3xl leading-tight font-extrabold tracking-tight sm:mb-20 sm:text-4xl md:text-4xl lg:text-6xl text-foreground"
+              className="mt-60 sm:mt-0 text-right text-3xl leading-tight font-extrabold tracking-tight sm:mb-26 sm:text-4xl md:text-4xl lg:text-6xl text-foreground"
               style={{ fontFamily: "var(--font-source-code-pro)" }}
             >
               CREATING <br />

@@ -18,12 +18,12 @@ import { Button } from "@/components/ui/button";
 
 const PortfolioSection = () => {
    return (
- <section
-  id="Portfolio"
-  data-section="Portfolio"
-  className="relative scroll-mt-24 bg-muted/50 text-foreground w-full overflow-hidden py-16 md:py-20 lg:py-24 selection-orange"
->
-     <div className="absolute -top-17 h-0 w-0" id="Portfolio-Page" />
+      <section
+         id="Portfolio"
+         data-section="Portfolio"
+         className="bg-muted/50 text-foreground selection-orange relative w-full scroll-mt-24 overflow-hidden py-16 md:py-20 lg:py-24"
+      >
+         <div className="absolute -top-17 h-0 w-0" id="Portfolio-page" />
 
          {/* Heading + Paragraph */}
          <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
@@ -58,7 +58,7 @@ const PortfolioSection = () => {
                />
                {/* Headings and Paragraph Section */}
                <h2
-                  className="relative z-10 text-2xl leading-tight font-extrabold tracking-tight uppercase sm:text-5xl md:text-6xl"
+                  className="relative z-10 text-2xl leading-tight font-extrabold tracking-tight uppercase sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl"
                   style={{ fontFamily: "var(--font-sora), sans-serif" }}
                >
                   {portfolioHeading.headingStart}
@@ -79,15 +79,15 @@ const PortfolioSection = () => {
             <p className="dark:text-muted-foreground sm:text-md text-justify-last-left mx-auto mt-6 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl">
                {portfolioParagraph.paragraphStart}
             </p>
-            <p className="dark:text-muted-foreground sm:text-md mx-auto mt-4 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl">
+            <p className="dark:text-muted-foreground sm:text-md mx-auto mt-4 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl hidden md:block">
                {portfolioParagraph.paragraphEnd}
             </p>
          </div>
 
          {/* Cards Displayed Section */}
          <div className="mt-16 w-full px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-screen-2xl">
-               <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+            <div className="mx-auto max-w-3xl lg:max-w-5xl 2xl:max-w-screen-2xl">
+               <div className="grid grid-cols-1 gap-3 pb-12 md:grid-cols-2 lg:grid-cols-3 lg:pb-16 2xl:pb-20 2xl:grid-cols-4">
                   {portfolioGridItems.map(
                      (
                         item,
@@ -99,7 +99,7 @@ const PortfolioSection = () => {
                                  {item.icon}
                                  <Badge
                                     variant="outline"
-                                    className="bg-gray-100 text-[10px] text-wrap sm:text-sm dark:bg-gray-400"
+                                    className="bg-black text-white text-[10px] text-wrap sm:text-sm dark:bg-white dark:text-black"
                                  >
                                     {item.category}
                                  </Badge>
@@ -112,7 +112,7 @@ const PortfolioSection = () => {
                                        alt={item.title}
                                        width={600}
                                        height={400}
-                                       className="h-56 w-full rounded-lg object-cover 2xl:h-30"
+                                       className="h-40 lg:h-45 w-full rounded-lg object-cover 2xl:h-30"
                                        style={{ objectPosition: "center" }}
                                     />
                                  </div>
@@ -122,7 +122,18 @@ const PortfolioSection = () => {
                                  {item.title}
                               </CardTitle>
                               <CardDescription>
-                                 {item.description}
+                                 {/* Small screen: show shorter content */}
+                                 <CardDescription>
+                                    {/* Show only first sentence on small screens */}
+                                    <span className="block sm:hidden">
+                                       {item.description.split(". ")[0]}.
+                                    </span>
+
+                                    {/* Show full description on larger screens */}
+                                    <span className="hidden sm:block">
+                                       {item.description}
+                                    </span>
+                                 </CardDescription>
                               </CardDescription>
                            </CardHeader>
 

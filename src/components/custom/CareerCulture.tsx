@@ -27,7 +27,7 @@ const highlights = [
 
 const CareerCultureHighlights = () => {
    return (
-      <section id="Careers" className="text-foreground w-full py-16 md:py-20 lg:py-24">
+      <section id="Careers" className="text-foreground w-full py-2 md:py-4 lg:py-2">
          <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
             <h2 className="mb-4 text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
                {careerGrid.heading}

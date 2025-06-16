@@ -56,7 +56,7 @@ const FocusHighlights = () => {
    const playFlipSound = useCallback(() => {
       if (hasInteracted && isInView && flipSoundRef.current) {
          flipSoundRef.current.currentTime = 0;
-         flipSoundRef.current.volume = 0.3;
+         flipSoundRef.current.volume = 0.2;
          flipSoundRef.current.play().catch(() => {});
       }
    }, [hasInteracted, isInView]);
@@ -69,7 +69,7 @@ const FocusHighlights = () => {
                focuses.map((_, idx) => (prev.includes(idx) ? -1 : idx))
             );
             playFlipSound();
-         }, 2000);
+         }, 2500);
       } else {
          if (intervalRef.current) clearInterval(intervalRef.current);
       }
@@ -84,7 +84,7 @@ const FocusHighlights = () => {
    return (
       <section
          ref={sectionRef}
-         className="w-full overflow-hidden px-4 py-24"
+         className="w-full overflow-hidden px-4 py-10"
          // id="focus-section"
          id="About"
       >
@@ -105,7 +105,7 @@ const FocusHighlights = () => {
                   viewport={{ once: true }}
                >
                   <Tilt tiltMaxAngleX={6} tiltMaxAngleY={6} scale={1.02}>
-                     <div className="glow-wrapper group flip-card perspective">
+                     <div className="group flip-card perspective">
                         <div
                            className={`flip-card-inner transition-transform duration-[1200ms] ${
                               isFlipped(i) ? "rotate-y-180" : ""

@@ -34,7 +34,7 @@ export default function FooterSection() {
       footerContent;
 
    return (
-      <footer id="Footer" className="bg-background text-foreground border-t pt-10 selection-orange">
+      <footer id="Footer" className="bg-background text-white/80 border-t pt-10 selection-orange">
          <div className="mx-auto max-w-7xl space-y-10 px-4 sm:px-6 lg:px-8">
             {/* Main Grid */}
             <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -124,7 +124,7 @@ export default function FooterSection() {
                      />
                      <button
                         type="submit"
-                        className="bg-primary w-full rounded-md px-4 py-2 text-sm text-white sm:w-auto dark:text-black"
+                        className="bg-primary w-full rounded-md px-4 py-2 text-sm text-white sm:w-auto dark:text-black cursor-pointer"
                      >
                         {newsletter.buttonText}
                      </button>

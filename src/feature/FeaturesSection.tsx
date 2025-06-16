@@ -44,7 +44,7 @@ const FeaturesSection = () => {
 
                {/* Heading */}
                <h2
-                  className="relative z-10 text-xl leading-tight font-extrabold tracking-tight break-words uppercase sm:text-4xl md:text-5xl lg:text-6xl"
+                  className="relative z-10 text-2xl font-extrabold tracking-tight break-words uppercase sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl"
                   style={{ fontFamily: "var(--font-sora), sans-serif" }}
                >
                   {featureHeading.headingStart}
@@ -65,7 +65,7 @@ const FeaturesSection = () => {
             <p className="dark:text-muted-foreground sm:text-md text-justify-last-left mx-auto mt-6 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl">
                {featureParagraph.paragraphStart}
             </p>
-            <p className="dark:text-muted-foreground sm:text-md mx-auto mt-4 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl">
+            <p className="dark:text-muted-foreground sm:text-md mx-auto mt-4 max-w-lg text-base leading-relaxed tracking-tight text-gray-700 md:max-w-2xl md:text-lg lg:max-w-4xl hidden md:block">
                {featureParagraph.paragraphEnd}
             </p>
 

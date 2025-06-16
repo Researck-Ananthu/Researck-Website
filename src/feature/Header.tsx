@@ -78,7 +78,7 @@ const HeaderSection = () => {
           {sections.map((item) => (
             <Link
               key={item}
-              href={`#${item}-Page`}
+              href={`#${item}-page`}
               className={`relative font-medium transition-colors duration-200 ${
                 activeSection === item
                   ? "text-primary font-semibold after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-100 after:bg-primary after:transition-transform after:duration-300 after:ease-out"
@@ -94,7 +94,7 @@ const HeaderSection = () => {
         <div className="font-ibm-plex-sans flex items-center gap-2">
             <Button
             variant="outline"
-            className="supports-[backdrop-filter]:bg-background/60 text-black dark:text-white/80 rounded-md px-4 py-2 font-normal"
+            className="supports-[backdrop-filter]:bg-background/60 text-black dark:text-white/80 rounded-md px-4 py-2 font-normal text-sm"
             asChild
             >
             <Link href="#">Start Conversation</Link>
