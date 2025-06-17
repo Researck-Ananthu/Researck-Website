@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import {
    careerHeading,
    careerParagraph,
-   careerInfo,
+   // careerInfo,
    careerJob,
    careerBanner,
 } from "@/lib/constant";

@@ -18,32 +18,31 @@ const TypingCodeBlock = () => {
 
    const currentCode = sourceCode[codeIndex];
 
-   useEffect(() => {
-      if (isPaused) return;
+  useEffect(() => {
+   if (isPaused) return;
 
-      let timeout: NodeJS.Timeout;
+   let timeout: NodeJS.Timeout;
 
-      if (currentIndex < currentCode.length) {
-         timeout = setTimeout(() => {
-            setDisplayedCode((prev) => prev + currentCode[currentIndex]);
-            setCurrentIndex((prev) => prev + 1);
-         }, TYPING_SPEED);
-      } else {
-         timeout = setTimeout(() => {
-            // 💡 choose next random snippet
-            let nextIndex = Math.floor(Math.random() * sourceCode.length);
-            while (nextIndex === codeIndex) {
-               nextIndex = Math.floor(Math.random() * sourceCode.length);
-            }
+   if (currentIndex < currentCode.length) {
+      timeout = setTimeout(() => {
+         setDisplayedCode((prev) => prev + currentCode[currentIndex]);
+         setCurrentIndex((prev) => prev + 1);
+      }, TYPING_SPEED);
+   } else {
+      timeout = setTimeout(() => {
+         let nextIndex = Math.floor(Math.random() * sourceCode.length);
+         while (nextIndex === codeIndex) {
+            nextIndex = Math.floor(Math.random() * sourceCode.length);
+         }
 
-            setCodeIndex(nextIndex);
-            setDisplayedCode("");
-            setCurrentIndex(0);
-         }, PAUSE_AFTER_COMPLETE);
-      }
+         setCodeIndex(nextIndex);
+         setDisplayedCode("");
+         setCurrentIndex(0);
+      }, PAUSE_AFTER_COMPLETE);
+   }
 
-      return () => clearTimeout(timeout);
-   }, [currentIndex, isPaused, currentCode]);
+   return () => clearTimeout(timeout);
+}, [currentIndex, isPaused, currentCode, codeIndex]);
 
    // Controls
    const handlePause = () => setIsPaused(true);
