@@ -86,7 +86,7 @@ const CareerIntroSection = () => {
                   }}
                />
                <h2
-                  className="relative z-10 text-2xl leading-tight font-extrabold tracking-tight text-balance break-words uppercase sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl"
+                  className="relative z-10 text-2xl font-extrabold tracking-tight text-balance break-words uppercase sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl"
                   style={{ fontFamily: "var(--font-sora), sans-serif" }}
                >
                   {careerHeading.headingStart}
